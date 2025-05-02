@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tic-Tac-Toe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="tic-tac-toe.css"
+    />
+    <script src="tic-tac-toe.js" defer></script>
+  </head>
+  <body>
+    <header class="game-heading">
+      <p>Tic-Tac-Toe</p>
+    </header>
+    <main class="game-container">
+      <div class="start-page">
+        <div class="icon-container">
+          <p class="x-icon">X</p>
+          <p class="o-icon">O</p>
+        </div>
+        <button class="start-button" type="button">Start Game</button>
+      </div>
+      <div class="choosing-form">
+        <h2 class="form-heading">Make a choice</h2>
+        <div class="icon-selection">
+          <button class="x-marker">X</button>
+          <button class="o-marker">O</button>
+        </div>
+        <div class="game-mode">
+          <button class="pvp">Player vs Player</button>
+          <button class="ai-mode">Player vs A.I</button>
+        </div>
+        <div class="form-cards">
+          <div class="player-cards" id="first-player">
+            <div class="player-icon">
+              <img
+                src="player-icons-pack/jon-snow.png"
+                alt="player-avatar"
+                class="player-avatar"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="48px"
+                width="48px"
+                viewBox="0 -960 960 960"
+                stroke="#BFC9E0"
+                stroke-width="20"
+                fill="none"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="form-icon"
+              >
+                <path
+                  d="M283.54-140 87.08-480l196.46-340h392.92l196.46 340-196.46 340H283.54Z"
+                />
+              </svg>
+              <div class="icon-box">
+                <span class="choice-icons icon1"
+                  ><img src="player-icons-pack/croupier.png" alt="" /></span
+                ><span class="choice-icons icon2"
+                  ><img src="player-icons-pack/fem-croupier.png" alt="" /></span
+                ><span class="choice-icons icon3"
+                  ><img
+                    src="player-icons-pack/daenerys-dragonqueen.png"
+                    alt=""
+                  /> </span
+                ><span class="choice-icons icon4"
+                  ><img src="player-icons-pack/jon-snow.png" alt="" /></span
+                ><span class="choice-icons icon5"
+                  ><img src="player-icons-pack/fem-ninja.png" alt="" /></span
+                ><span class="choice-icons icon6"
+                  ><img src="player-icons-pack/ninja.png" alt="" /></span
+                ><span class="choice-icons icon7"
+                  ><img src="player-icons-pack/pirate.png" alt="" /></span
+                ><span class="choice-icons icon8"
+                  ><img src="player-icons-pack/princess.png" alt=""
+                /></span>
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <input type="text" placeholder="Mark" class="player-input-1"/>
+            </div>
+          </div>
+          <div class="ai-card">
+            <div class="ai-icon">
+              <img
+                src="player-icons-pack/ai.png"
+                alt="player-avatar"
+                class="ai-avatar"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="48px"
+                width="48px"
+                viewBox="0 -960 960 960"
+                stroke="#BFC9E0"
+                stroke-width="20"
+                fill="none"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="form-icon"
+              >
+                <path
+                  d="M283.54-140 87.08-480l196.46-340h392.92l196.46 340-196.46 340H283.54Z"
+                />
+              </svg>
+            </div>
+            <p class="ai-name">A.I</p>
+          </div>
+          <div class="player-cards" id="second-player">
+            <div class="player-icon">
+              <img
+                src="player-icons-pack/ninja.png"
+                alt="player-avatar"
+                class="player-avatar"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="48px"
+                width="48px"
+                viewBox="0 -960 960 960"
+                stroke="#BFC9E0"
+                stroke-width="20"
+                fill="none"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="form-icon"
+              >
+                <path
+                  d="M283.54-140 87.08-480l196.46-340h392.92l196.46 340-196.46 340H283.54Z"
+                />
+              </svg>
+              <div class="icon-box">
+                <span class="choice-icons icon1"
+                  ><img src="player-icons-pack/croupier.png" alt="" /></span
+                ><span class="choice-icons icon2"
+                  ><img src="player-icons-pack/fem-croupier.png" alt="" /></span
+                ><span class="choice-icons icon3"
+                  ><img
+                    src="player-icons-pack/daenerys-dragonqueen.png"
+                    alt=""
+                  /> </span
+                ><span class="choice-icons icon4"
+                  ><img src="player-icons-pack/jon-snow.png" alt="" /></span
+                ><span class="choice-icons icon5"
+                  ><img src="player-icons-pack/fem-ninja.png" alt="" /></span
+                ><span class="choice-icons icon6"
+                  ><img src="player-icons-pack/ninja.png" alt="" /></span
+                ><span class="choice-icons icon7"
+                  ><img src="player-icons-pack/pirate.png" alt="" /></span
+                ><span class="choice-icons icon8"
+                  ><img src="player-icons-pack/princess.png" alt=""
+                /></span>
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <input type="text" placeholder="Jake" class="player-input-2"/>
+            </div>
+          </div>
+        </div>
+        <div class="action-buttons">
+          <button class="cancel-btn">Cancel</button>
+          <button class="start-btn">Start</button>
+        </div>
+      </div>
+      <div class="game-ui">
+        <div class="player1-card">
+          <div class="player1-icon">
+            <img
+                src="player-icons-pack/jon-snow.png"
+                alt="player-avatar"
+                class="game-avatar"
+              />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="40px"
+              viewBox="0 -960 960 960"
+              width="40px"
+              fill="#e3e3e3"
+              class="game-icon"
+            >
+              <path
+                d="M287.67-146.83 94.5-480l193.17-334h385.5L865.5-480 673.17-146.83h-385.5ZM300.5-170h359.83l177.84-310-177.86-310.83H300.5L120.83-480 300.5-170ZM480-480Z"
+              />
+            </svg>
+          </div>
+          <p class="player1-name"></p>
+          <p class="player1-marker">X</p>
+          <p class="player1-points">00 points</p>
+        </div>
+        <div class="marker-buttons">
+                  <!-- Row 1 -->
+          <button class="marker-btn btn-1" type="button"><span  class="marker-span"></span></button
+          ><button class="marker-btn btn-2"><span class="marker-span"></span></button
+          ><button class="marker-btn btn-3"><span class="marker-span"></span></button>
+                  <!-- Row 2 -->
+          <button class="marker-btn btn-4"><span class="marker-span"></span></button
+          ><button class="marker-btn btn-5"><span class="marker-span"></span></button
+          ><button class="marker-btn btn-6"><span class="marker-span"></span></button>
+                  <!-- Row 3 -->
+          <button class="marker-btn btn-7"><span class="marker-span"></span></button
+          ><button class="marker-btn btn-8"><span class="marker-span"></span></button
+          ><button class="marker-btn btn-9"><span class="marker-span"></span></button>
+        </div>
+
+        <div class="player2-card">
+          <div class="player2-icon">
+            <img
+                src="player-icons-pack/daenerys-dragonqueen.png"
+                alt="player-avatar"
+                class="game-avatar"
+              />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="40px"
+              viewBox="0 -960 960 960"
+              width="40px"
+              fill="#e3e3e3"
+              class="game-icon"
+            >
+              <path
+                d="M287-146 94-480l193-334h386l193 334-193 334H287Zm13.33-24h359.34l178-310-178.03-310H300.33l-179 310 179 310ZM480-480Z"
+              />
+            </svg>
+          </div>
+          <p class="player2-name"></p>
+          <p class="player2-marker"></p>
+          <p class="player2-points">00 points</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
